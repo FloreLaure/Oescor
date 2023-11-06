@@ -122,6 +122,30 @@ DATABASES = {
 }
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'Oescor_base',
+#         'USER': 'flore',
+#         'PASSWORD': 'inside@5',
+#         'HOST': '127.0.0.1',
+#         'PORT': '5432',
+#     }
+# }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'orange',
+#         'USER': 'postgres',
+#         'PASSWORD': 'inside@5',
+#         'HOST': '127.0.0.1',
+#         'PORT': '5432', 
+#     }
+# }
+
+
+
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
@@ -157,6 +181,10 @@ LOGGING = {
         },
     },
 }
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+ALLOWED_HOSTS = ['kevine.pythonanywhere.com']
+
 
 # 'handlers': {
 #     'file': {
@@ -184,6 +212,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+Path= '/home/kevine/django_project/static'
 LOGIN_REDIRECT_URL = '/index/'
 
 # Default primary key field type
